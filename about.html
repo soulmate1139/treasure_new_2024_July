@@ -1,0 +1,570 @@
+<!-- start session in order for the website login run -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from GRANTtrustvaultssecurity.com/about by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 19:59:24 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="granttrustsecurity, GRANTtrust, safekeeping company"
+    />
+    <meta name="keywords" content="vaults, safekeeping gold around the world" />
+    <meta name="author" content="Grant Trust Security" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Grant Trust Security</title>
+    <link rel="icon" href="img/mkl.png" sizes="16x16" type="image/png" />
+  </head>
+
+  <body>
+    <div class="container d-none d-md-block">
+      <div class="row">
+        <!-- <div class="col-md-3">
+        <img src="IMG/TTS.png" alt="logo" class="img-fluid logo float-right">
+      </div> -->
+        <div class="col-md-12 text-center">
+          <br />
+          <img src="img/logo.png" alt="logo" height="150" />
+        </div>
+      </div>
+    </div>
+    <!-- START HERE -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="index-2.html">
+          <img src="img/gts.png" alt="GTS"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index-2.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="safe-keeping.html"
+                  >Safe Keeping & Vault Services</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="bullion-transportation.html"
+                  >Bullion Transportation & Logistics</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="gold-assaying.html"
+                  >Gold Assaying</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tracking.html">Tracking</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle login_class"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                onclick="show_dashboard()"
+              >
+                Login
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdown"
+                id="login_to_dash"
+              >
+                <a class="dropdown-item" href="login.html">Account Login</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="vaultlogin.html">Vault Login</a>
+              </div>
+              <!-- <a class="nav-link" href="login.php">Login</a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Page header -->
+      <section id="page-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 m-auto text-center">
+              <h1 class="font-weight-bold">About Us</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- First content -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center">WHO WE ARE</h3>
+              <p>
+                Grant Trust Security is a fully Licensed, Bonded and Insured
+                Private Security Company, registered in Australia
+                and a leader in high quality and effective. GRANT Trust Security provides fully trained and screened officers and
+                personnel to maintain secure environments for companies,
+                residences, warehouses amongst others.
+              </p>
+              <p>
+                Our physical security services are designed to fully integrate
+                with your requirements, likewise to provide the maximum
+                protection for your workers and assets. Our officers are
+                selected for their professional demeanor, attitude and ability.
+                All officers undergo comprehensive background screening,
+                criminal record and fingerprint checks. Our extensive training
+                involves theoretical and practical courses including security
+                planning, security and law, public relations, first aid, fire
+                prevention and public decorum.
+              </p>
+              <p>
+                Grant Trust Security officers are prepared to politely handle
+                and diffuse delicate situations, while taking a proactive stance
+                enforcing client policy. Commitment to effective security and
+                exceptional customer service is our hallmark.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Mission -->
+      <section class="py-5 bg-color">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <div class="text-muted text-center">
+                <div class="card-body">
+                  <i class="fas fa-user-shield fa-3x text-danger"></i>
+                  <h3>Our Mission</h3>
+                  <p>
+                    To promote and create value for our clients through
+                    consistently delivering high quality Gold investment
+                    services to our customers and maximizing their satisfaction.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-muted text-center">
+                <div class="card-body">
+                  <i class="fas fa-glasses fa-3x text-danger"></i>
+                  <h3>Our Vision</h3>
+                  <p>
+                    To be recognised as the premier gold mining company known
+                    for delivering an outstanding services in our business
+                    operation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-muted text-center">
+                <div class="card-body">
+                  <i class="fas fa-bullseye fa-3x text-danger"></i>
+                  <h3>Our Goals</h3>
+                  <p>
+                    Our goal is to create sustainable value for our employees
+                    and social partners through safe and responsible mining
+                    practices and capital discipline as a global mining company.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <div class="text-muted text-center">
+                <div class="card-body">
+                  <i class="fas fa-certificate fa-3x text-danger"></i>
+                  <h3>Certified Products</h3>
+                  <p>
+                    Grant Trust Security is duly registered and fully certified
+                    by the Registrar Generals department and Minerals Commission
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-muted text-center">
+                <div class="card-body">
+                  <i class="fas fa-cog fa-3x text-danger"></i>
+                  <h3>Secure & Safe</h3>
+                  <p>
+                    Our company is dedicated to the goal of providing expert
+                    Security and Courier services at affordable prices to build
+                    lasting customer relationships for years to come.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-muted text-center">
+                <div class="card-body">
+                  <i class="fas fa-user-tie fa-3x text-danger"></i>
+                  <h3>We are professional</h3>
+                  <p>
+                    Our team consist of highly skilled and motivated individuals
+                    who are always ready to assist clients whenever the need
+                    arises
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section id="testimonials" class="p-4 bg-dark text-white">
+        <div class="container">
+          <h2 class="text-center">testimonials</h2>
+          <div class="row text-center">
+            <div class="col">
+              <div class="slider">
+                <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      Grant Trust Security is always responsive to any question
+                      I have, they keep me informed and they understand who we
+                      are and what we’re trying to do.
+                    </p>
+                    <footer class="blockquote-footer">
+                      Enoch Bentsil
+                      <cite title="Company 1"> - FEA Engineer</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      They have got my project on time with the competition with
+                      a highly skilled, well-organized and experienced team of
+                      professional Engineers.
+                    </p>
+                    <footer class="blockquote-footer">
+                      Alfred Borg
+                      <cite title="Company 2"> - CAD Expert</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      I know they are going to be honest with me. I am not going
+                      to get a sub-par product; I know it is going to be good.
+                      That is the number one advantage
+                    </p>
+                    <footer class="blockquote-footer">
+                      Godfred Wilson
+                      <cite title="Company 3"> - Minerals Commisioner</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location -->
+      <section class="p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <iframe
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=st+martins+tower+sydney+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                frameborder="0"
+                style="
+                  border: 2px solid #00aeef;
+                  background: white;
+                  box-shadow: 0px 0.2px 8px 0px rgba(0, 0, 0, 0.2);
+                "
+                allowfullscreen=""
+                width="100%"
+                height="360"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <!-- <footer id="main-footer" class="p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+        <h5 href="#1">Contact</h5>
+            <p>20 Martin Place, <br>
+              Sydney 2000 NSW<br>
+            </p>
+            <p>+61 48 889 5584  <br> +61 48 005 0548</p> 
+            <p>info@alliedremittance.com</p> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="text-center">Copyright &copy; <span id="year"></span> Banks Blog</p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+    <section class="">
+      <!-- Footer -->
+      <footer class="bg-secondary text-white text-center text-md-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="text-uppercase text-left">
+                GRANT TRUST SECURITY
+              </h5>
+
+              <p class="text-left">
+                Our team has so many years of knowledge of international
+                industrial systems, dedicated to provide the best economical
+                solutions to our valued customers. We are committed to
+                environmental protection and social responsibility.
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Navigation</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="index-2.html" class="text-white">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" class="text-white">About Us</a>
+                </li>
+                <li>
+                  <a href="safe-keeping.html" class="text-white">Services</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0 text-left">Contact</h5>
+
+              <ul class="list-unstyled text-left">
+                <li>
+                  
+                  <p class="text-white mb-0">St Martins Tower,</p>
+                  <p>Sydney, Australia</p>
+                </li>
+                <li>
+                  <p class="text-white mb-0"></p>
+                  <p class="text-white mb-0"></p>
+                  <p class="text-white"></p>
+                </li>
+                <li>
+                  <p class="text-white mb-0">+61 480006307</p>
+                  <p class="text-white mb-0"></p>
+                  <p>granttrustsec@fastservice.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          <p class="text-center text-white">
+            Copyright &copy; <span id="year"></span> Grant Trust Security
+          </p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+      integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Get the current year for the copyright
+        $("#year").text(new Date().getFullYear());
+
+        //Initial testimonial
+        $(".slider").slick({
+          infinte: true,
+          slideToShow: 1,
+          slideToScroll: 1,
+        });
+
+        //configure carousel speed and hover
+        $(".carousel").carousel({
+          interval: 6000,
+          pause: "hover",
+        });
+
+        //lightbox
+        $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+        });
+
+        // Video Play
+        $(function () {
+          // Auto play modal video
+          $(".video").click(function () {
+            var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-video"),
+              videoSRCauto =
+                videoSRC +
+                "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+            $(theModal + " iframe").attr("src", videoSRCauto);
+            $(theModal + " button.close").click(function () {
+              $(theModal + " iframe").attr("src", videoSRC);
+            });
+          });
+        });
+
+        $(".counter-count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+
+  <!-- Mirrored from GRANTtrustvaultssecurity.com/about by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 19:59:24 GMT -->
+</html>

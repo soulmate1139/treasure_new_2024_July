@@ -1,0 +1,464 @@
+<!-- start session in order for the website login run -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from GRANTtrustvaultssecurity.com/gold-assaying by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 19:59:25 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="granttrustsecurity, GRANTtrust, safekeeping company"
+    />
+    <meta name="keywords" content="vaults, safekeeping gold around the world" />
+    <meta name="author" content="Grant Trust Security" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Grant Trust Security</title>
+    <link rel="icon" href="img/mkl.png" sizes="16x16" type="image/png" />
+  </head>
+
+  <body>
+    <div class="container d-none d-md-block">
+      <div class="row">
+        <!-- <div class="col-md-3">
+        <img src="IMG/TTS.png" alt="logo" class="img-fluid logo float-right">
+      </div> -->
+        <div class="col-md-12 text-center">
+          <br />
+          <img src="img/logo.png" alt="logo" height="150" />
+        </div>
+      </div>
+    </div>
+    <!-- START HERE -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="index-2.html">
+          <img src="img/gts.png" alt="GTS"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index-2.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="safe-keeping.html"
+                  >Safe Keeping & Vault Services</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="bullion-transportation.html"
+                  >Bullion Transportation & Logistics</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="gold-assaying.html"
+                  >Gold Assaying</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tracking.html">Tracking</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle login_class"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                onclick="show_dashboard()"
+              >
+                Login
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdown"
+                id="login_to_dash"
+              >
+                <a class="dropdown-item" href="login.html">Account Login</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="vaultlogin.html">Vault Login</a>
+              </div>
+              <!-- <a class="nav-link" href="login.php">Login</a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Page header -->
+      <section id="page-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 m-auto text-center">
+              <h1 class="font-weight-bold">Gold Assaying</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Side nav -->
+      <section class="p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="list-group">
+                <p class="list-group-item list-group-item-action">
+                  All Services
+                </p>
+                <a
+                  href="safe-keeping.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  Safe Keeping & Vault Services
+                </a>
+                <a
+                  href="bullion-transportation.html"
+                  class="list-group-item list-group-item-action"
+                  >Bullion Transportation & logistic</a
+                >
+                <a
+                  href="gold-assaying.html"
+                  class="list-group-item list-group-item-action bg-danger active"
+                  >Gold Assaying</a
+                >
+              </div>
+            </div>
+            <div class="col-md-5">
+              <img
+                src="img/gold-513062_640.jpg"
+                alt=""
+                class="img-fluid mb-5"
+              />
+              <h3 class="font-weight-bold">Gold Assaying</h3>
+
+              <p class="text-muted">
+                Mineral assay of exploration samples for Gold, including routine
+                exploration and ore reserve samples.
+              </p>
+              <p class="text-muted">
+                Grant Trust Security has extensive expertise in providing Gold
+                exploration and production assay data to clients on a global
+                basis.
+              </p>
+
+              <p class="text-muted">
+                The primary criteria for selection of the most appropriate and
+                cost-effective Gold Assay method include:
+              </p>
+              <ul>
+                <p>Type of sample</p>
+                <li class="text-muted">Mineralogy of sample</li>
+                <li class="text-muted">Presence or absence of coarse gold</li>
+                <li class="text-muted">Other element testing required?</li>
+              </ul>
+
+              <p class="text-muted">
+                A diverse range of techniques are available for gold explorers
+                and miners including; lead collection fire assay gold analysis,
+                screen fire assay or accelerated cyanide leach for coarse gold
+                deposits, target generation analysis by aqua regia or BLEG,
+                partial digest geochemistry, multi-element and pathfinders,
+                lithogeochemical packages, bullion assays and mine-site
+                laboratories.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="img/service-3-2.jpg" alt="" class="img-fluid mb-5" />
+              <p class="text-muted">
+                Fire Assay or Lead Collection Fire Assay remains the method of
+                choice for quantitative gold determination.The fore assay flux
+                mixture has been carefully formulated to optimise precious metal
+                recovery in diverse mineralogical matrices.
+              </p>
+
+              <p class="text-muted">
+                Aqua Regia will digest many minerals, however, silicates and
+                refractory minerals will remain largely undigested. Aqua regia
+                is useful for grassroots exploration and as a screening tool. It
+                is a cost effective way to analyse for gold and other elements.
+              </p>
+
+              <p class="text-muted">
+                Grant Trust Security mineral assay personnel are experts with
+                years of mining and mineral industry experience, please contact
+                us for more information.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- <footer id="main-footer" class="p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+        <h5 href="#1">Contact</h5>
+            <p>20 Martin Place, <br>
+              Sydney 2000 NSW<br>
+            </p>
+            <p>+61 48 889 5584  <br> +61 48 005 0548</p> 
+            <p>info@alliedremittance.com</p> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="text-center">Copyright &copy; <span id="year"></span> Banks Blog</p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+    <section class="">
+      <!-- Footer -->
+      <footer class="bg-secondary text-white text-center text-md-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="text-uppercase text-left">
+                GRANT TRUST SECURITY
+              </h5>
+
+              <p class="text-left">
+                Our team has so many years of knowledge of international
+                industrial systems, dedicated to provide the best economical
+                solutions to our valued customers. We are committed to
+                environmental protection and social responsibility.
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Navigation</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="index-2.html" class="text-white">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" class="text-white">About Us</a>
+                </li>
+                <li>
+                  <a href="safe-keeping.html" class="text-white">Services</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0 text-left">Contact</h5>
+
+              <ul class="list-unstyled text-left">
+                <li>
+                  
+                  
+                  <p class="text-white mb-0">St Martins Tower,</p>
+                  <p>Sydney, Australia</p>
+                </li>
+                <li>
+                  <p class="text-white mb-0"></p>
+                  <p class="text-white mb-0"></p>
+                  <p class="text-white"></p>
+                </li>
+                <li>
+                  <p class="text-white mb-0">+61 480006307</p>
+                  <p class="text-white mb-0"></p>
+                  <p>granttrustsec@fastservice.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          <p class="text-center text-white">
+            Copyright &copy; <span id="year"></span> Grant Trust Security
+          </p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+      integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Get the current year for the copyright
+        $("#year").text(new Date().getFullYear());
+
+        //Initial testimonial
+        $(".slider").slick({
+          infinte: true,
+          slideToShow: 1,
+          slideToScroll: 1,
+        });
+
+        //configure carousel speed and hover
+        $(".carousel").carousel({
+          interval: 6000,
+          pause: "hover",
+        });
+
+        //lightbox
+        $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+        });
+
+        // Video Play
+        $(function () {
+          // Auto play modal video
+          $(".video").click(function () {
+            var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-video"),
+              videoSRCauto =
+                videoSRC +
+                "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+            $(theModal + " iframe").attr("src", videoSRCauto);
+            $(theModal + " button.close").click(function () {
+              $(theModal + " iframe").attr("src", videoSRC);
+            });
+          });
+        });
+
+        $(".counter-count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+
+  <!-- Mirrored from GRANTtrustvaultssecurity.com/gold-assaying by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 19:59:26 GMT -->
+</html>
