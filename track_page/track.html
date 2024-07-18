@@ -1,0 +1,854 @@
+<!-- saved from url=(0067)https://appurtenant-propose.000webhostapp.com/temp/GTS/index10.php# -->
+<html
+  class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths dj_gecko dj_contentbox js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
+  lang="en"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+
+    <script src="./index_files/jquery.min.js.download"></script>
+    <script src="./index_files/metrics-all.js.download"></script>
+    <script src="./index_files/optimize.js.download"></script>
+    <title>GTS Tracking®</title>
+    <link rel="stylesheet" href="./index_files/footer.css" />
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css" />
+    <link rel="stylesheet" href="./index_files/calendar.css" />
+    <link rel="stylesheet" href="./index_files/datepicker3.css" />
+    <link rel="stylesheet" href="./index_files/main.css" />
+    <link rel="stylesheet" href="./index_files/tracking-cross-sell.css" />
+    <link rel="stylesheet" href="./index_files/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./index_files/schedule-redelivery.css" />
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="header"
+      data-requiremodule="require-jquery"
+      src="./index_files/require-jquery.js.download"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="header"
+      data-requiremodule="helpers"
+      src="./index_files/helpers.js.download"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="header"
+      data-requiremodule="search-fe"
+      src="./index_files/search-fe.js.download"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="header"
+      data-requiremodule="jquery"
+      src="./index_files/jquery.min.js.download"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="global"
+      data-requiremodule="resize-manager"
+      src="./index_files/resize-manager.js.download"
+    ></script>
+    <script
+      async=""
+      type="text/javascript"
+      src="./index_files/tracking.js.download"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="header"
+      data-requiremodule="require-jquery"
+      src="./index_files/require-jquery.js(1).download"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="header"
+      data-requiremodule="helpers"
+      src="./index_files/helpers.js(1).download"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="header"
+      data-requiremodule="search-fe"
+      src="./index_files/search-fe.js(1).download"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="header"
+      data-requiremodule="jquery"
+      src="./index_files/jquery-3.5.1.js.download"
+    ></script>
+
+      <!-- POPULATE INFORMATION INTO THE FIELDS -->
+  <script>
+    window.onload = (event) => {
+        document.getElementById("show_tracking_no").innerText = sessionStorage.getItem("track_id");
+        document.getElementById("package_status").innerText = sessionStorage.getItem("status");
+        document.getElementById("package_progress").innerText = sessionStorage.getItem("progress");
+        document.getElementById("reciever_name").innerText = sessionStorage.getItem("reciever_name");
+        document.getElementById("reciever_addr").innerText = sessionStorage.getItem("reciever_addr");
+        document.getElementById("arrival_date").innerText = sessionStorage.getItem("arrival_date");
+
+        var progress_bar = document.getElementById("progress_bar");
+        progress_bar.classList.add(sessionStorage.getItem("progress_bar"));
+
+        if(sessionStorage.getItem("status_color") == "green"){
+            document.getElementById("package_status").style.color = "green";
+        }else{
+            document.getElementById("package_status").style.color = "red";
+        }
+        
+        if(sessionStorage.getItem("progress_color") == "green"){
+            document.getElementById("package_progress").style.color = "green";
+        }else{
+            document.getElementById("package_progress").style.color = "red";
+        }
+    };
+  </script>
+  </head>
+  <body>
+    <div id="tracking_page_wrapper">
+      <link
+        href="./index_files/megamenu-v2.css"
+        type="text/css"
+        rel="stylesheet"
+      />
+      <style>
+        body {
+          min-width: 0 !important;
+        }
+        #utility-bar,
+        .util {
+          display: none;
+        }
+        ul,
+        ol {
+          list-style-type: disc;
+          list-style: disc;
+        }
+        .empty-search ul {
+          list-style: none;
+          list-style-type: none;
+        }
+        [class^="icon-"]:before,
+        [class*=" icon-"]:before {
+          background-position: 50%;
+        }
+        li.usps-logo {
+          background-color: #ffffff !important;
+        }
+        body {
+          overflow-x: hidden;
+        }
+        #track-confirm {
+          height: 100%;
+        }
+        @media only screen and (min-width: 959px) {
+          .menu ol li ol li:first-of-type {
+            padding-top: 0 !important;
+          }
+          .global-navigation,
+          #utility-header {
+            max-width: 100% !important;
+          }
+          .menu-wrap {
+            max-width: 100% !important;
+          }
+          html,
+          body {
+            max-width: 100%;
+            overflow-x: -moz-scrollbars-vertical;
+          }
+        }
+        .product_tracking_header .product_info td {
+          vertical-align: top;
+        }
+        .product_tracking_details .tracking_history_container div.more_rows a {
+          font-size: 14px;
+        }
+        .panel-actions-content {
+          font-size: 14px;
+        }
+        div#shortcuts-menu-wrapper a {
+          font-weight: normal;
+        }
+        input#global-header--search-track {
+          background: transparent;
+          border: 0;
+          color: #202020;
+          display: inline-block;
+          font-family: "HelveticaNeueW02-55Roma", "Helvetica Neue", Helvetica,
+            Arial, sans-serif;
+          font-size: 13px;
+          font-size: 1.3rem;
+          height: 40px;
+          height: 4rem;
+          line-height: 20px;
+          line-height: 2rem;
+          outline: 0;
+          margin: 0;
+          padding: 10px 0;
+          -webkit-appearance: none;
+          width: 83%;
+        }
+        .easy-autocomplete-container ul li,
+        .easy-autocomplete-container ul .eac-category {
+          margin-top: 0px;
+        }
+        .empty-search li {
+          margin-top: 0px;
+        }
+        body {
+          font-size: 14px;
+        }
+        .hint .speech_bubble {
+          bottom: calc(100% + 10px) !important;
+        }
+        .error-handler li {
+          display: none;
+        }
+        @media only screen and (max-width: 958px) {
+          .quick--search .input--field {
+            height: 44px !important;
+            border: 0 !important;
+            margin-top: 3px !important;
+          }
+        }
+        form#trackPackage .tracking-btn.disabled {
+          opacity: 1;
+          cursor: pointer;
+          filter: alpha(opacity=100);
+        }
+        .mobile-quicktools .quicktools-full .shortcut.sc-pobox {
+          border-left: 0px !important;
+        }
+        @media only screen and (max-width: 958px) {
+          .alert-bar {
+          }
+          .menu.active .menu--tier-one-link span:first-of-type {
+            width: 80%;
+            display: block;
+            left: 0;
+            position: absolute;
+            padding-left: 22px;
+            height: 80px;
+            top: 0;
+            padding-top: 28px;
+            box-sizing: border-box;
+          }
+          .menu.active .menu--tier-one li {
+            border-top: 1px solid #333366;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+          }
+
+          .menu.active .menu--tier-one li.ge_parent ol li {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+          }
+
+          a.menu--tier-one-link.menu--item {
+            padding-top: 28px !important;
+            display: block;
+            padding-bottom: 27px !important;
+          }
+
+          .menu ol li ol li a {
+            line-height: 20px !important;
+            margin-top: 0px !important;
+            padding: 20px 22px !important;
+          }
+          .menu.active ol li.touchscreen-only {
+            display: none !important;
+          }
+        }
+        #utility-header a#link-myusps:before {
+          background-image: url("https://tools.usps.com/global-elements/header/images/utility-header/mailman.svg") !important;
+        }
+        .global--navigation input.global-header--search-track {
+          border: 0;
+          width: 80%;
+          display: inline-block;
+          vertical-align: bottom;
+          padding-left: 18px;
+          height: 31px;
+          background: #ffffff;
+        }
+        .global--navigation .nav-search input.global-header--search-track {
+          height: 25px;
+        }
+        @media print {
+          .global--navigation {
+            display: none !important;
+          }
+          .nav-utility {
+            display: none !important;
+          }
+          .global-footer--wrap {
+            display: none !important;
+          }
+          #global-footer--wrap {
+            display: none !important;
+          }
+          .global-footer {
+            display: none !important;
+          }
+        }
+      </style>
+      <style>
+        button {
+          border: 0;
+        }
+      </style>
+
+      <div class="global--navigation" id="g-navigation">
+        <a tabindex="-1" name="skipallnav" id="skipallnav" class="hidden-skip"
+          >Skip all category navigation links</a
+        >
+        <div class="nav-full">
+          <a class="global-logo" style="vertical-align: baseline">
+            <img
+              src="./index_files/gts.png"
+              alt="Image of GTS logo."
+              aria-label="Image of GTS logo."
+            />
+          </a>
+          <div class="mobile-header">
+            <a class="mobile-logo"
+              ><img
+                src="./index_files/gts.png"
+                alt="GTS mobile logo"
+                style="padding-left: 0px"
+            /></a>
+            <a class="mobile-search"
+              ><img src="./index_files/search.svg" alt="Search Icon"
+            /></a>
+          </div>
+
+          <nav>
+            <div class="mobile-log-state">
+              <div id="msign" class="mobile-utility">
+                <div class="mobile-sign">
+                  <a>Sign In</a>
+                </div>
+              </div>
+            </div>
+            <ul class="nav-list" role="menubar">
+              <li class="qt-nav menuheader">
+                <a
+                  tabindex="-1"
+                  name="navquicktools"
+                  id="navquicktools"
+                  class="hidden-skip"
+                  >Skip Quick Tools Links</a
+                >
+                <a
+                  aria-expanded="false"
+                  role="menuitem"
+                  tabindex="0"
+                  aria-haspopup="true"
+                  class="nav-first-element menuitem"
+                  >Quick Tools</a
+                >
+              </li>
+              <li class="menuheader">
+                <a
+                  tabindex="-1"
+                  name="navmailship"
+                  id="navmailship"
+                  class="hidden-skip"
+                  >Skip Mail and Ship Links</a
+                >
+                <a
+                  id="mail-ship-width"
+                  aria-expanded="false"
+                  class="menuitem"
+                  role="menuitem"
+                  tabindex="0"
+                  aria-haspopup="true"
+                  >Tracking</a
+                >
+              </li>
+              <li class="menuheader">
+                <a
+                  tabindex="-1"
+                  name="navtrackmanage"
+                  id="navtrackmanage"
+                  class="hidden-skip"
+                  >Skip Track and Manage Links</a
+                >
+                <a
+                  aria-expanded="false"
+                  class="menuitem"
+                  role="menuitem"
+                  tabindex="0"
+                  aria-haspopup="true"
+                  >Shipping</a
+                >
+              </li>
+              <li class="menuheader">
+                <a
+                  tabindex="-1"
+                  name="navpostalstore"
+                  id="navpostalstore"
+                  class="hidden-skip"
+                  >Skip Postal Store Links</a
+                >
+                <a
+                  aria-expanded="false"
+                  class="menuitem"
+                  role="menuitem"
+                  tabindex="0"
+                  aria-haspopup="true"
+                  >Services</a
+                >
+              </li>
+              <li class="menuheader"></li>
+              <li class="menuheader"></li>
+
+              <li class="nav-search menuheader">
+                <a
+                  tabindex="-1"
+                  name="navsearch"
+                  id="navsearch"
+                  class="hidden-skip"
+                  >Skip Search</a
+                >
+                <a
+                  aria-expanded="false"
+                  class="menuitem"
+                  tabindex="0"
+                  aria-haspopup="true"
+                  role="menuitem"
+                  >Search GTS</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="search--wrapper-hidden" id="search--display">
+            <span aria-hidden="false" class="input--wrap-label"> </span>
+            <form
+              role="search"
+              method="get"
+              class="search global-header--search"
+            >
+              <span aria-hidden="false" class="input--wrap">
+                <div class="easy-autocomplete search-box">
+                  <label
+                    class="visuallyhidden"
+                    for="global-header--search-track-mob-search"
+                    >Enter Search term for Search GTS</label
+                  >
+                  <input
+                    autocomplete="off"
+                    placeholder="Search or Enter a Tracking Number"
+                    class="search--track-input input--field q fsrVisible global-header--search-track"
+                    id="global-header--search-track-mob-search"
+                    maxlength="256"
+                    name="q"
+                    type="text"
+                  />
+                  <input
+                    value="Search"
+                    class="input--search search--submit"
+                    type="submit"
+                  />
+                </div>
+                <div class="autocorrect"><ul></ul></div>
+              </span>
+            </form>
+
+            <div class="empty-search">
+              <p>Top Searches</p>
+            </div>
+          </div>
+
+          <a name="endnav" id="endnav" class="hidden-skip">&nbsp;</a>
+        </div>
+      </div>
+
+      <script
+        type="text/javascript"
+        src="./index_files/jquery-3.2.1.js.download"
+      ></script>
+      <script src="./index_files/modernizr.js.download"></script>
+      <script
+        type="text/javascript"
+        src="./index_files/megamenu.js.download"
+      ></script>
+      <script
+        type="text/javascript"
+        src="./index_files/OneLinkUsps.js.download"
+      ></script>
+      <script
+        type="text/javascript"
+        src="./index_files/ge-login.js.download"
+      ></script>
+      <script src="./index_files/require.js.download"></script>
+      <script src="./index_files/header-init-search.js.download"></script>
+      <script src="./index_files/megamenu-additions.js.download"></script>
+
+      <!-- END GLOBAL HEADER -->
+
+      <div class="container-fluid full-subheader">
+        <!-- Subheader -->
+        <h1>GTS Tracking<sup>®</sup></h1>
+        <div class="subheader_links">
+          <a class="active">Tracking <i class="icon-carat_right"></i></a>
+          <a class="header-faqs" id="faqHeader"
+            ><strong>FAQs</strong> <i class="icon-carat_right"></i
+          ></a>
+        </div>
+      </div>
+      <div class="container-fluid tracking_form_container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-sm-12">
+            <h3>
+              <a class="track-another-package-open"
+                >Track Another Package <i>+</i></a
+              >
+            </h3>
+          </div>
+          <div class="col-xl-9 col-lg-8 col-sm-12"></div>
+        </div>
+        <div class="modal fade" id="modal-start-end" role="dialog">
+          <div class="dialog-start-end modal-dialog">
+            <div class="modal-content modal-container redlivModalContent">
+              <div class="modal-header redlivModalHeader">
+                <h3 class="modal-title redlivModalTitle">Select Date</h3>
+              </div>
+              <div class="modal-body redlivModalBody">
+                <div class="body-content">
+                  <div class="row">
+                    <div
+                      class="col-md-12 col-sm-12 col-xs-12"
+                      style="margin-top: -16px"
+                    >
+                      <p class="normal select-date-subheader">
+                        Available dates are based on the package selected.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row start-end-dates-cal-container">
+                    <div class="col-md-12 col-sm-12 col-xs-12 resume-date-cal">
+                      <div id="resume-start-cal"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 required-field">
+                      <p class="normal date-selected">
+                        <strong>Date Selected:</strong
+                        ><input
+                          type="text"
+                          id="modal-resume-date"
+                          disabled=""
+                        />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 button-wrapper">
+                      <div class="button-container redlivbtnContainer">
+                        <a
+                          role="button"
+                          class="btn-primary saveDate"
+                          id="save-resume-date"
+                          data-dismiss="modal"
+                          tabindex="0"
+                          >Select</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 button-wrapper">
+                      <div class="button-container redlivbtnContainer">
+                        <a
+                          role="button"
+                          class="btn-primary button--white clearDates"
+                          id="clear-resume-dates"
+                          data-dismiss="modal"
+                          tabindex="0"
+                          >Cancel</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END CALENDAR MODAL -->
+
+        <div class="row">
+          <div class="col-sm-10">
+            <span class="cancel"
+              ><a class="track-another-package-close" style="display: none"
+                >Close <i class="icon-cancel"></i></a
+            ></span>
+          </div>
+        </div>
+        <div class="row tracking-group" style="display: none">
+          <!-- Start TRACKING FORM -->
+          <form
+            data-toggle="validator"
+            name="TrackConfirmAction"
+            id="trackPackage"
+            method="GET"
+            novalidate="true"
+          >
+            <input type="hidden" id="tRef" name="tRef" value="fullpage" />
+            <input type="hidden" id="tLc" name="tLc" value="0" />
+            <input type="hidden" id="text28777" name="text28777" value="" />
+            <input type="hidden" id="tLabels" name="tLabels" value="" />
+            <div class="col-sm-10">
+              <div class="form-group">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="tracking-input"
+                  placeholder="Enter up to 35 tracking numbers separated by commas or enter a barcode number"
+                  required=""
+                  pattern="(((,[1-9])\d+)){1,35}"
+                  data-pattern-error="Please enter a valid tracking number"
+                  data-required-error="Please enter a tracking number."
+                ></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-sm-2 track-btn-ctn">
+              <button class="button tracking-btn" type="submit">Track</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      &lt;
+      <div id="tracked-numbers">
+        <div class="track-bar-container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="product_summary delivery_exception">
+                  <h3 class="tracking_number">
+                    Tracking Number:
+                    <span class="tracking-number" id="show_tracking_no"></span>
+                 </h3>
+          <div class="expected_delivery">
+      </div>
+          <div class="delivery_status">
+                    <h3>Status : </h3>
+                    <!-- <h2> <strong>We have issues with your shipping address</strong> -->
+                        <!-- <h2> <strong style="color:green !important">In Transit</strong> -->
+                            <h2> <strong style="color:red" id="package_status"></strong>
+                      <p style="margin-top:15px;font-size:14px;">GTS Allows you to Redeliver your package to your address in case of delivery failure or any other case.<br>You can also track the package at any time, from shipment to delivery.</p></h2>
+                    <div class="status_feed">
+                      <p> 
+                      </p><p class="important"></p>
+                      <p></p>
+                   </div> 
+                  </div>
+                      <div class="status_bar null" id="progress_bar">
+                    <div class="bar_third bar_third_1"><span></span></div>
+                    <div class="bar_third bar_third_2"><span></span></div>
+                    <div class="bar_third bar_third_3"><span></span></div>
+                  <span class="text_explanation" id="package_progress" style="color: red;"></span></div>
+                  <!-- <span class="text_explanation">Sent Out For Delivery</span></div> -->
+                </div> <!-- END Product Summary -->
+                <h6>Reciever Name:</h6>
+                <p style="margin-top:0px;font-size:14px;" id="reciever_name"></p>
+                <h6>Reciever Address:</h6>
+                <p style="margin-top:0px;font-size:14px;" id="reciever_addr"></p>
+                <h6>Arrive Date:</h6>
+                <p style="margin-top:0px;font-size:14px;" id="arrival_date"></p>
+            </div><!-- End col -->	
+        </div>
+        
+  
+  
+  
+  
+    </div> 
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+  <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 12737706;
+      ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+  </script>
+  <noscript><a href="https://www.livechatinc.com/chat-with/12737706/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+  <!-- End of LiveChat code -->
+  
+      </div>
+        <!--End Tracking Numbers container -->
+        <div class="container-fluid find-FAQs">
+          <!-- FAQs Link Callout row  -->
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 style="color: green;">Can’t find what you’re looking for?</h2>
+              <p>
+                Go to our FAQs section to find answers to your tracking
+                questions or contact us at <a style="color:blue" href="tel:+61488895554">+61 480006307</a>
+              </p> 
+              <a id="idxsFAQBtn" class="button">FAQs</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="global-footer--wrap" class="global-footer--wrap">
+          <link
+            type="text/css"
+            rel="stylesheet"
+            href="./index_files/main-sb.css"
+          />
+          <link
+            type="text/css"
+            rel="stylesheet"
+            href="./index_files/footer-sb.css"
+          />
+          <footer class="global-footer">
+            <a class="global-logo" style="vertical-align: baseline">
+              <img
+                src="./index_files/gts.png"
+                alt="Image of GTS logo."
+                aria-label="Image of GTS logo."
+              />
+            </a>
+            <nav class="global-footer--navigation">
+              <ol>
+                <li
+                  style="color: #333366"
+                  class="global-footer--navigation-category"
+                >
+                  Helpful Links
+                  <ol class="global-footer--navigation-options">
+                    <li>
+                      <a>Contact Us</a>
+                    </li>
+                    <li>
+                      <a>Site Index</a>
+                    </li>
+                    <li>
+                      <a>FAQs</a>
+                    </li>
+                    <li>
+                      <a onclick="KAMPYLE_ONSITE_SDK.showForm(244)">Feedback</a>
+                    </li>
+                  </ol>
+                </li>
+                <li
+                  style="color: #333366"
+                  class="global-footer--navigation-category"
+                >
+                  On GTS
+                  <ol class="global-footer--navigation-options">
+                    <li>
+                      <a>About GTS Home</a>
+                    </li>
+                    <li>
+                      <a>Newsroom</a>
+                    </li>
+                    <li>
+                      <a>GTS Service Updates</a>
+                    </li>
+                    <li>
+                      <a>Forms &amp; Publications</a>
+                    </li>
+                    <li>
+                      <a>Government Services</a>
+                    </li>
+                    <li>
+                      <a>Careers</a>
+                    </li>
+                  </ol>
+                </li>
+                <li
+                  style="color: #333366"
+                  class="global-footer--navigation-category"
+                >
+                  Other GTS Sites
+                  <ol class="global-footer--navigation-options">
+                    <li>
+                      <a>Business Customer Gateway</a>
+                    </li>
+                    <li>
+                      <a>Postal Inspectors</a>
+                    </li>
+                    <li>
+                      <a>Inspector General</a>
+                    </li>
+                    <li>
+                      <a>Postal Explorer</a>
+                    </li>
+                    <li>
+                      <a>National Postal Museum</a>
+                    </li>
+                    <li>
+                      <a>Resources for Developers</a>
+                    </li>
+                  </ol>
+                </li>
+                <li
+                  style="color: #333366"
+                  class="global-footer--navigation-category"
+                >
+                  Legal Information
+                  <ol class="global-footer--navigation-options">
+                    <li>
+                      <a>Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a>Terms of Use</a>
+                    </li>
+                    <li>
+                      <a>FOIA</a>
+                    </li>
+                    <li>
+                      <a>No FEAR Act EEO Data</a>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </nav>
+            <div class="global-footer--copyright">
+              Copyright © 2022 GTS. All Rights Reserved.
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var package_info = JSON.parse(localStorage.getItem("tracked_info"));
+      document.getElementById("tracking_no").innerText =
+        package_info.tracking_no;
+      document.getElementById("status").innerText = package_info.status;
+      document.getElementById("to").innerText = package_info.to;
+      document.getElementById("delivery_date").innerText =
+        package_info.delivery_date;
+
+      var status_level = package_info.progress_level;
+      document
+        .getElementById("status_progress_bar")
+        .classList.add("status_" + status_level);
+    </script>
+  </body>
+</html>

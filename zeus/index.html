@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="loader_packages/style.css">
+	<link rel="stylesheet" href="loader_packages/css/normalize.css">
+	<link rel="stylesheet" href="loader_packages/css/main.css">
+	<script src="loader_packages/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    
+         <!-- LOADER -->
+         <div class="demo" id='divElement' style="display: none;">
+            <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <![endif]-->
+            
+                <!-- Demo content -->			
+                <div id="demo-content">
+            
+                    <header class="entry-header">
+            
+                        <nav class="back-link">
+                            <span class="nav-previous"><a href="#" rel="prev"><span class="meta-nav"></span> Almost done<i>&larr;</i></a></span>
+                        </nav><!-- .nav-single -->
+            
+                        <h1 class="entry-title" style="color: black !important;">Getting your tracking information!</h1>
+                    </header>
+            
+                    <div id="loader-wrapper">
+                        <div id="loader"></div>
+                    </div>
+            
+                </div>
+                <!-- /Demo content -->
+            
+                <script src="loader_packages/js/main.js"></script>
+            
+        </div>
+    <!-- LOADER -->
+
+
+<div id="get_email_block" class="container" style="margin-top: 100px; padding-top: 100px; padding-bottom: 50px; display: block;">
+    <h1>TRACKING DATA</h1>
+        <div class="row">
+            <div class="input-group input-group-icon"><input type="email" id="get_email_input" placeholder="Enter Tracking Number" />
+                <div class="input-icon"><i class="fa fa-envelope"></i></div>
+            </div>
+            <button id="get_user_by_email" style="width: 100%; padding: 10px; background-color: yellowgreen; color:white; border:none; font-weight:bolder; margin-bottom: 10px;" onclick="edit_tracking_info()">Edit Tracking Number</button>
+            <button id="get_user_by_email1" style="width: 100%; padding: 10px; background-color: green; color:white; border:none; font-weight:bolder" onclick="create_tracking_info()">Generate New Tracking</button>
+        </div>
+</div>
+
+
+
+<div class="container" id="display_fields_block" style="display: none;">
+    <div>
+        <h1 style="text-align: center;">Admin Panel</h1>
+        <div class="row">
+            <h4>Dashboard</h4>
+            <div class="input-group input-group-icon" onclick="copy_tracking()"><input readonly type="text" id="tracking_no" placeholder="Tracking No" />
+                <div class="input-icon"><i class="fa fa-copy"></i></div>
+            </div>
+            <div class="input-group input-group-icon"><input type="text" id="full_name" placeholder="Full Name" />
+                <div class="input-icon"><i class="fa fa-user"></i></div>
+            </div>
+            <div class="input-group input-group-icon"><input type="text" id="address" placeholder="Address" />
+                <div class="input-icon"><i class="fa fa-user"></i></div>
+            </div>
+            <div class="input-group input-group-icon"><input type="text" id="date" placeholder="Friday, June 2, 2023" />
+                <div class="input-icon"><i class="fa fa-user"></i></div>
+            </div>
+            <div class="input-group input-group-icon"><input type="text" id="status" placeholder="Status" />
+                <div class="input-icon"><i class="fa fa-user"></i></div>
+            </div>
+            <label for="">Progress bar lever:</label>
+            <div class="input-group input-group-icon">
+                <select id="progress_bar">
+                    <option value="status_1">1</option>
+                    <option value="status_2">2</option>
+                    <option value="status_3">3</option>
+                    <option value="status_4">4</option>
+                    <option value="status_5">5</option>
+                    <option value="status_6">6</option>
+                </select>
+            </div>
+            <label for="">Color:</label>
+            <div class="input-group input-group-icon">
+                <select id="color">
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <button onclick="sendToDatabase()" style="width: 100%; padding: 10px; background-color: green; border: none; margin-top: 10px; color: white; font-weight: bolder; ">SEND TO SERVER</button>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+<br />
+<br />
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
