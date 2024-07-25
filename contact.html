@@ -59,16 +59,16 @@
 
   <body>
     <div class="container d-none d-md-block">
-      <div class="row">
-        <!-- <div class="col-md-3">
+      <!-- <div class="row">
+        <div class="col-md-3">
         <img src="IMG/TTS.png" alt="logo" class="img-fluid logo float-right">
-      </div> -->
+      </div>
         <div class="col-md-12 text-center">
           <br />
           <img src="img/logo.png" alt="logo" height="150" />
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- START HERE -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
       <div class="container">
@@ -205,18 +205,18 @@
                   <hr />
                   <form
                     name="contact"
-                    action="index.html"
+                    action="php/send.php"
                     method="post"
-                    netlify
                   >
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
                           <input
                             type="text"
-                            name="name"
+                            name="userName"
                             class="form-control"
                             placeholder="Name"
+                            required
                           />
                         </div>
                       </div>
@@ -224,9 +224,10 @@
                         <div class="form-group">
                           <input
                             type="text"
-                            name="mail"
+                            name="email"
                             class="form-control"
                             placeholder="E-mail"
+                            required
                           />
                         </div>
                       </div>
@@ -245,9 +246,10 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <textarea
-                            name="message"
+                            name="msg"
                             class="form-control"
                             placeholder="Message"
+                            required
                           ></textarea>
                         </div>
                       </div>
