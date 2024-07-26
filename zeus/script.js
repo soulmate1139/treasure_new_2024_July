@@ -140,11 +140,12 @@
         document.getElementById("divElement").style.display = "none";
     }
     function randomStr() {
-        let len = 12, arr = '123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', ans = '';
+        // let len = 12, arr = '123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', ans = '';
+        let len = 12, arr = '1234567890', ans = '';
         for (let i = len; i > 0; i--) {
             ans += arr[(Math.floor(Math.random() * arr.length))];
         }
-        return ans;
+        return "G" + ans;
     }
     function copy_tracking(){
         var copyText = document.getElementById("tracking_no");

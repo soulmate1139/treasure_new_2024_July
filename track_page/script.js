@@ -46,8 +46,8 @@ const firebaseConfig = {
     }
 
     function GotoDetails(){
-        var user_data = localStorage.getItem(("user_details_holder"));
-        var trackers = JSON.parse(user_data).trackers;
+        var user_data = user_details_holder;//localStorage.getItem(("user_details_holder"));
+        var trackers = user_data.trackers;
 
 
         trackers.forEach(element => {
